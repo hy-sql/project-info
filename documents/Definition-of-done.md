@@ -4,6 +4,7 @@
 
 - Ohjelmakoodi on laadukasta
 - Ohjelmakoodin tyyli on yhtenäinen
+- Syötteet on validoitu
 - Ohjelmakoodi on testattu
   - Testikattavuus vähintään 80%
 - Feature branch on mergetty masteriin
