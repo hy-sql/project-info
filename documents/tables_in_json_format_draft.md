@@ -4,7 +4,16 @@
 {
 "name": "Tuotteet",
 "id": 1,
-"columns": [ "id", "name" ]
+"columns": [ 
+    {
+    	"name": "id",
+	"type": "INTEGER"
+    },
+    {
+    	"name": "name",
+	"type": "TEXT"
+    }
+],
 "rows": [
     {
 	"id": 1,
@@ -20,7 +29,16 @@
 {
 "name": "Henkilot",
 "id": 2,
-"columns": [ "id", "name" ],
+"columns": [ 
+    {
+    	"name": "id",
+	"type": "INTEGER"
+    },
+    {
+    	"name": "name",
+	"type": "TEXT"
+    }
+],
 "rows": [
     {
 	"id": 1,
