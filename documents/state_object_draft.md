@@ -2,51 +2,52 @@
 
 ```
 {
-"name": "Tuotteet",
-"id": 1,
-"columns": [ 
+name: "Tuotteet",
+columns: [ 
     {
-    	"name": "id",
-	"type": "INTEGER"
+    	name: "id",
+	type: "INTEGER",
+	primaryKey: true
     },
     {
-    	"name": "name",
-	"type": "TEXT"
+    	name: "name",
+	type: "TEXT",
+	primaryKey: false
     }
 ],
-"rows": [
+rows: [
     {
-	"id": 1,
-	"name": "Retiisi"
+	id: 1,
+	name: "Retiisi"
     },
     {
-	"id": 2,
-	"name": "Omena"
+	id: 2,
+	name: "Omena"
     }
 ]
-
 },
 {
-"name": "Henkilot",
-"id": 2,
-"columns": [ 
+name: "Henkilot",
+columns: [ 
     {
-    	"name": "id",
-	"type": "INTEGER"
+    	name: "id",
+	type: "INTEGER",
+	primaryKey: true
     },
     {
-    	"name": "name",
-	"type": "TEXT"
+    	name: "name",
+	type: "TEXT",
+	primaryKey: false
     }
 ],
-"rows": [
+rows: [
     {
-	"id": 1,
-	"name": "Bob"
+	id: 1,
+	name: "Bob"
     },
     {
-	"id": 2,
-	"name": "Alice"
+	id: 2,
+	name: "Alice"
     }
 ]
 }
