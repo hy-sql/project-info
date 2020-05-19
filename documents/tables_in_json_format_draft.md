@@ -1,6 +1,5 @@
-# Draft of the Tables-array in JSON
+# Draft of the State object
 
-Endpoint eg. `api/tables`
 ```
 {
 "name": "Tuotteet",
@@ -34,39 +33,4 @@ Endpoint eg. `api/tables`
 ]
 }
 ```
-
-Endpoint eg. `api/tables/1`
-```
-{
-"name": "Tuotteet",
-"id": 1,
-"columns": [ "id", "name" ]
-"rows": [
-    {
-	"id": 1,
-	"name": "Retiisi"
-    },
-    {
-	"id": 2,
-	"name": "Omena"
-    }
-]
-
-}
-```
-
-Endpoint eg. `/api/tables/1/rows`
-```
-[
-    {
-	"id": 1,
-	"name": "Retiisi"
-    },
-    {
-	"id": 2,
-	"name": "Omena"
-    }
-]
-```
-
 
