@@ -1,5 +1,9 @@
 # HY-SQL project-info
-Documentation and additional information about HYSQL-project
+Documentation and additional information about HYSQL-project.
+
+[Backend-repo](https://github.com/hy-sql/hy-sql-backend)
+
+[Frontend-repo](https://github.com/hy-sql/hy-sql-frontend)
 
 ## Links
 [Definition of Done](https://github.com/hy-sql/project-info/blob/master/documents/Definition-of-done.md)
