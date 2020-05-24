@@ -147,7 +147,7 @@ This is a JSON schema for the database tables contained in `this.tablelist`.
                 "name": {
                   "type": "string",
                   "title": "The name schema",
-                  "description": "Name of the item on the row.",
+                  "description": "Name of the item in the row.",
                   "default": "",
                   "examples": [
                     "Retiisi"
@@ -156,7 +156,7 @@ This is a JSON schema for the database tables contained in `this.tablelist`.
                 "price": {
                   "type": "integer",
                   "title": "The price schema",
-                  "description": "Price of the object on the row",
+                  "description": "Price of the item in the row",
                   "default": 0,
                   "examples": [
                     7
