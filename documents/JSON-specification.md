@@ -7,8 +7,7 @@ This is a JSON schema for the database tables contained in `this.tablelist`.
 
 ---
 ```
-{  
-    "$schema": "http://json-schema.org/draft-07/schema"
+{ 
     "type": "object",
     "title": "Database table schema",
     "description": "Schema for an entire database table",
