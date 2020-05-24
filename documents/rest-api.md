@@ -12,7 +12,7 @@ https://hy-sql.herokuapp.com/
 | GET      | `/api/ping`             |  Return a JSON object { value: 'pong' }                                   |
 
 -  **Success Response**
-    -    **Code:** 200
+    - **Code:** 200    
     **Content:** ` { value: ‘pong’ }`
 
 ---
