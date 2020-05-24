@@ -20,7 +20,7 @@ https://hy-sql.herokuapp.com/
 
 | Method   | URL                                           | Description                                                                      |
 | -------- | --------------------------------------------- | ----------------------------------------------------------------------------     |
-| POST     | `/api/query`                                  | Receives a JSON object containing strings { query: ['...', ..] }                 |
+| POST     | `/api/query`                                  | Receives a JSON object containing strings { commandArray: ['...', ..] }                |
 - **Data Parameters**
     Body must include proper SQL commands as an array of strings. 
     
@@ -30,5 +30,5 @@ https://hy-sql.herokuapp.com/
     **Content:** Returns the result set and a possible SQL error
 -  **Error Response**
     - **Code:** 400  
-    **Content:** `{error: 'query missing'}`
+    **Content:** `{error: 'commandArray missing'}`
 
