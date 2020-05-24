@@ -4,9 +4,31 @@
 
 https://hy-sql.herokuapp.com/
 
-| Metodi	 | URL                                           | Kuvaus                                                                      |
-| -------- | --------------------------------------------- | ----------------------------------------------------------------------------|
-| GET      | `/api/ping`                                   | Palauttaa JSON objektin { value: 'pong' }                                   |
-| POST     | `/api/query`                                  | Vastaanottaa merkkijonoja sisältävän JSON objektin { query: ['...', ..] }   |
-|          |                                               | ja palauttaa merkkijonoja sisältävän JSON objektin                          |
-|          |                                               | { result: ['...', ...], error: '...' }                                      |
+
+---
+### Test command for API 
+| Method   | URL                     | Description                                                                 |
+| -------- | ----------------------- | ----------------------------------------------------------------------------|
+| GET      | `/api/ping`             |  Return a JSON object { value: 'pong' }                                   |
+
+-  **Success Response**
+    -    **Code:** 200
+    **Content:** ` { value: ‘pong’ }`
+
+---
+### Receive and return data
+
+| Method   | URL                                           | Description                                                                      |
+| -------- | --------------------------------------------- | ----------------------------------------------------------------------------     |
+| POST     | `/api/query`                                  | Receives a JSON object containing strings { query: ['...', ..] }                 |
+- **Data Parameters**
+    Body must include proper SQL commands as an array of strings. 
+    
+    e.g: `{query: [ 'CREATE TABLE Nimet (nimi text);', 'CREATE TABLE Luvut (numero integer);' ]}`
+ -  **Success Response**
+    -    **Code:** 200  
+    **Content:** Returns the result set and a possible SQL error
+-  **Error Response**
+    - **Code:** 400  
+    **Content:** `{error: 'query missing'}`
+
