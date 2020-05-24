@@ -24,7 +24,7 @@ https://hy-sql.herokuapp.com/
 - **Data Parameters**
     Body must include proper SQL commands as an array of strings. 
     
-    e.g: `{query: [ 'CREATE TABLE Nimet (nimi text);', 'CREATE TABLE Luvut (numero integer);' ]}`
+    e.g: `{ commandArray: [ 'CREATE TABLE Nimet (nimi text);', 'CREATE TABLE Luvut (numero integer);' ] }`
  -  **Success Response**
     -    **Code:** 200  
     **Content:** Returns the result set and a possible SQL error
