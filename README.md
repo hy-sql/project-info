@@ -9,3 +9,7 @@ Documentation and additional information about HYSQL-project.
 [Definition of Done](https://github.com/hy-sql/project-info/blob/master/documents/Definition-of-done.md)
 
 [Backlog](https://docs.google.com/spreadsheets/d/1nJdcx5CDziG5eUQzXuKG28PjcQR2W66e_cYpa68dE4o/edit?usp=sharing)
+
+[Backend-API](https://github.com/hy-sql/project-info/blob/master/documents/rest-api.md)
+
+[JSON specification](https://github.com/hy-sql/project-info/blob/master/documents/JSON-specification.md)
