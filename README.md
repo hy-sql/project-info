@@ -1,6 +1,8 @@
 # HY-SQL project-info
 Documentation and additional information about HYSQL-project.
 
+Goal of the HY-SQL project is to implement easy-to-use and informative SQL-based web tool for students to use while learning basics of relational databases.
+
 [Backend-repository](https://github.com/hy-sql/hy-sql-backend)
 
 [Frontend-repository](https://github.com/hy-sql/hy-sql-frontend)
