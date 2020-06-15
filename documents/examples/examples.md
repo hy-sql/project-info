@@ -1,4 +1,4 @@
-# Implemented functions and some examples of their use
+# Implemented features and some examples of their use
 
 When you start, you have an empty database.
 
@@ -7,7 +7,7 @@ When you start, you have an empty database.
 3. Update or delete some rows
 4. Search for information using the SELECT query
 
-Example
+Example: https://hy-sql.netlify.app/
 ```
 CREATE TABLE Tuotteet (id INTEGER PRIMARY KEY, nimi TEXT, hinta INTEGER);
 INSERT INTO Tuotteet (nimi, hinta) VALUES ('retiisi', 7);
@@ -81,7 +81,7 @@ AND   TRUE if all the conditions separated by AND is TRUE
 OR    TRUE if any of the conditions separated by OR is TRUE
 ```
 
-## Example with Comparison Operators and Logical Operators
+## Example of Comparison Operators and Logical Operators
 ```
 CREATE TABLE Tuotteet (id INTEGER PRIMARY KEY, nimi TEXT, hinta INTEGER);
 INSERT INTO Tuotteet (nimi, hinta) VALUES ('porkkana', 7);
