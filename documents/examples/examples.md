@@ -81,6 +81,7 @@ AND   TRUE if all the conditions separated by AND is TRUE
 OR    TRUE if any of the conditions separated by OR is TRUE
 ```
 
+## Example with Comparison Operators and Logical Operators
 ```
 CREATE TABLE Tuotteet (id INTEGER PRIMARY KEY, nimi TEXT, hinta INTEGER);
 INSERT INTO Tuotteet (nimi, hinta) VALUES ('porkkana', 7);
