@@ -17,7 +17,7 @@ UPDATE Tuotteet SET hinta=14 WHERE nimi='banaani';
 DELETE FROM Tuotteet WHERE hinta<=7;
 SELECT * FROM Tuotteet ORDER BY hinta;
 ```
-![pic01.png](pic01.png)
+![pic01.png](https://github.com/hy-sql/project-info/blob/master/documents/examples/pic01.PNG)
 
 
 ## Arithmetic Operators (+, -, *, /, %)
@@ -27,7 +27,7 @@ CREATE TABLE Example (id INTEGER);
 INSERT INTO Example (id) VALUES (1);
 SELECT 11+4, 11-4, 11*4, 11/4, 11%4, 4-1*3+10/2 FROM Example;
 ```
-![pic02.png](pic02.png)
+![pic02.png](https://github.com/hy-sql/project-info/blob/master/documents/examples/pic02.PNG)
 
 
 ## String Functions
@@ -40,7 +40,7 @@ INSERT INTO Example (id, month) VALUES (1, 'January');
 INSERT INTO Example (id, month) VALUES (6, 'June');
 SELECT month, LENGTH(month) FROM Example ORDER BY month DESC;
 ```
-![pic03.png](pic03.png)
+![pic03.png](https://github.com/hy-sql/project-info/blob/master/documents/examples/pic03.PNG)
 
 ## Math/Numeric Functions
 
@@ -61,7 +61,7 @@ INSERT INTO Tuotteet (nimi, hinta) VALUES ('nauris', 1);
 INSERT INTO Tuotteet (nimi, hinta) VALUES ('bucket', 0);
 SELECT SUM(hinta)/COUNT(*) FROM Tuotteet;
 ```
-![pic04.png](pic04.png)
+![pic04.png](https://github.com/hy-sql/project-info/blob/master/documents/examples/pic04.PNG)
 
 ## Comparison Operators
 
@@ -91,4 +91,4 @@ INSERT INTO Tuotteet (nimi, hinta) VALUES ('nauris', 4);
 INSERT INTO Tuotteet (nimi, hinta) VALUES ('bucket', 0);
 SELECT nimi, hinta, 5*hinta+3, LENGTH(nimi) FROM Tuotteet WHERE hinta=LENGTH(nimi) OR (hinta+1=5 AND nimi<>'banaani') OR (hinta=2*hinta) ORDER BY LENGTH(hinta), hinta;
 ```
-![pic05.png](pic05.png)
+![pic05.png](https://github.com/hy-sql/project-info/blob/master/documents/examples/pic05.PNG)
