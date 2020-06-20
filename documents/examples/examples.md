@@ -62,8 +62,7 @@ INSERT INTO Tuotteet (nimi, hinta) VALUES ('porkkana', 4);
 INSERT INTO Tuotteet (nimi, hinta) VALUES ('banaani', 3);
 INSERT INTO Tuotteet (nimi, hinta) VALUES ('retiisi', 2);
 INSERT INTO Tuotteet (nimi, hinta) VALUES ('nauris', 1);
-INSERT INTO Tuotteet (nimi, hinta) VALUES ('bucket', 0);
-SELECT SUM(hinta)/COUNT(*) FROM Tuotteet;
+SELECT AVG(hinta), COUNT(*), MAX(hinta), MIN(hinta), SUM(hinta) FROM Tuotteet;
 ```
 
 ![pic04.png](https://github.com/hy-sql/project-info/blob/master/documents/examples/pic04.PNG)
