@@ -102,3 +102,31 @@ ORDER BY LENGTH(hinta), hinta;
 ```
 
 ![pic05.png](https://github.com/hy-sql/project-info/blob/master/documents/examples/pic05.PNG)
+
+## Example of GROUP BY with HAVING
+
+```sql
+CREATE TABLE Tehtavat (id INTEGER PRIMARY KEY, tarkeys INTEGER, projekti_id INTEGER);
+INSERT INTO Tehtavat (tarkeys, projekti_id) VALUES (2, 4);
+INSERT INTO Tehtavat (tarkeys, projekti_id) VALUES (3, 4);
+INSERT INTO Tehtavat (tarkeys, projekti_id) VALUES (3, 3);
+INSERT INTO Tehtavat (tarkeys, projekti_id) VALUES (4, 3);
+INSERT INTO Tehtavat (tarkeys, projekti_id) VALUES (1, 2);
+INSERT INTO Tehtavat (tarkeys, projekti_id) VALUES (3, 2);
+INSERT INTO Tehtavat (tarkeys, projekti_id) VALUES (3, 2);
+INSERT INTO Tehtavat (tarkeys, projekti_id) VALUES (4, 1);
+INSERT INTO Tehtavat (tarkeys, projekti_id) VALUES (4, 1);
+INSERT INTO Tehtavat (tarkeys, projekti_id) VALUES (4, 1);
+SELECT projekti_id, COUNT(*)
+FROM Tehtavat
+WHERE tarkeys >= 3
+GROUP BY projekti_id
+HAVING COUNT(*) >= 2
+ORDER BY projekti_id;
+```
+
+| project_id | COUNT(\*) |
+| ---------- | --------- |
+| 1          | 3         |
+| 2          | 2         |
+| 3          | 2         |
