@@ -9,7 +9,7 @@ https://hy-sql.herokuapp.com/
 ### Test command for API 
 | Method   | URL                     | Description                                                                 |
 | -------- | ----------------------- | ----------------------------------------------------------------------------|
-| GET      | `/api/ping`             |  Return a JSON object { value: 'pong' }                                   |
+| GET      | `/api/ping`             |  Return a JSON object `{ value: 'pong' }`                                   |
 
 -  **Success Response**
     - **Code:** 200    
@@ -20,7 +20,7 @@ https://hy-sql.herokuapp.com/
 
 | Method   | URL                                           | Description                                                                      |
 | -------- | --------------------------------------------- | ----------------------------------------------------------------------------     |
-| POST     | `/api/query`                                  | Receives a JSON object containing strings { commandArray: ['...', ..] }                |
+| POST     | `/api/query`                                  | Receives a JSON object containing strings `{ commandArray: ['...', ..] }`                |
 - **Data Parameters**
     Body must include proper SQL commands as an array of strings. 
     
