@@ -17,8 +17,8 @@ Goal of the HY-SQL project is to implement easy-to-use and informative SQL-based
 ## Documentation
 [Implemented features and examples of usage](https://github.com/hy-sql/project-info/blob/master/documents/examples/examples.md)
 
-[Backend-API](https://github.com/hy-sql/project-info/blob/master/documents/rest-api.md)
+[Backend-API Docs](https://github.com/hy-sql/project-info/blob/master/documents/rest-api.md)
 
 [Architecture](https://github.com/hy-sql/project-info/blob/master/documents/architecture.md)
 
-[JSON specification](https://github.com/hy-sql/project-info/blob/master/documents/JSON-specification.md)
+[API-responses in JSON](https://github.com/hy-sql/project-info/blob/master/documents/API-response.md)
