@@ -130,3 +130,36 @@ ORDER BY projekti_id;
 | 1          | 3         |
 | 2          | 2         |
 | 3          | 2         |
+
+## Example of LIMIT
+
+```sql
+CREATE TABLE Tuotteet (id INTEGER PRIMARY KEY, nimi TEXT, hinta INTEGER);
+INSERT INTO Tuotteet (nimi, hinta) VALUES ('retiisi', 7);
+INSERT INTO Tuotteet (nimi, hinta) VALUES ('omena', 5);
+INSERT INTO Tuotteet (nimi, hinta) VALUES ('kirsikka', 8);
+INSERT INTO Tuotteet (nimi, hinta) VALUES ('porkkana', 3);
+SELECT nimi, hinta FROM Tuotteet ORDER BY hinta LIMIT 2;
+```
+
+|   nimi   | hinta |
+| -------- | ----- |
+| porkkana | 3     |
+| omena    | 5     |
+
+
+## Example of LIMIT OFFSET
+
+```sql
+CREATE TABLE Tuotteet (id INTEGER PRIMARY KEY, nimi TEXT, hinta INTEGER);
+INSERT INTO Tuotteet (nimi, hinta) VALUES ('retiisi', 7);
+INSERT INTO Tuotteet (nimi, hinta) VALUES ('omena', 5);
+INSERT INTO Tuotteet (nimi, hinta) VALUES ('kirsikka', 8);
+INSERT INTO Tuotteet (nimi, hinta) VALUES ('porkkana', 3);
+SELECT nimi, hinta FROM Tuotteet ORDER BY hinta LIMIT 2 OFFSET 2;
+```
+
+|   nimi   | hinta |
+| -------- | ----- |
+| retiisi  | 7     |
+| kirsikka | 8     |
