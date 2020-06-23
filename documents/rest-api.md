@@ -1,4 +1,4 @@
-# REST API rajapintojen kuvaus
+# REST API description
 
 ## HY-SQL-Backend
 
@@ -27,7 +27,7 @@ https://hy-sql.herokuapp.com/
     e.g: `{ commandArray: [ 'CREATE TABLE Nimet (nimi text);', 'CREATE TABLE Luvut (numero integer);' ] }`
  -  **Success Response**
     -    **Code:** 200  
-    **Content:** Returns the result set and a possible SQL error
+    **Content:** Returns the result set and a possible SQL error. Detailed description [here](https://github.com/hy-sql/project-info/blob/master/documents/API-response.md)
 -  **Error Response**
     - **Code:** 400  
     **Content:** `{error: 'commandArray missing'}`
