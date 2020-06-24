@@ -15,10 +15,4 @@ Goal of the HY-SQL project is to implement easy-to-use and informative SQL-based
 [Backlog](https://docs.google.com/spreadsheets/d/1nJdcx5CDziG5eUQzXuKG28PjcQR2W66e_cYpa68dE4o/edit?usp=sharing)
 
 ## Documentation
-[Implemented features and examples of usage](https://github.com/hy-sql/project-info/blob/master/documents/examples/examples.md)
-
-[Backend-API Docs](https://github.com/hy-sql/project-info/blob/master/documents/rest-api.md)
-
-[Architecture](https://github.com/hy-sql/project-info/blob/master/documents/architecture.md)
-
-[API-responses in JSON](https://github.com/hy-sql/project-info/blob/master/documents/API-response.md)
+For detailed documentation see [wiki](https://github.com/hy-sql/project-info/wiki)
