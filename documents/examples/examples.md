@@ -163,3 +163,19 @@ SELECT nimi, hinta FROM Tuotteet ORDER BY hinta LIMIT 2 OFFSET 2;
 | -------- | ----- |
 | retiisi  | 7     |
 | kirsikka | 8     |
+
+## Example of DISTINCT
+
+```sql
+CREATE TABLE Tuotteet (id INTEGER PRIMARY KEY, nimi TEXT, hinta INTEGER);
+INSERT INTO Tuotteet (nimi, hinta) VALUES ('retiisi', 7);
+INSERT INTO Tuotteet (nimi, hinta) VALUES ('retiisi', 7);
+INSERT INTO Tuotteet (nimi, hinta) VALUES ('porkkana', 8);
+INSERT INTO Tuotteet (nimi, hinta) VALUES ('porkkana', 3);
+SELECT DISTINCT nimi, hinta FROM Tuotteet;
+```
+|   nimi   | hinta |
+| -------- | ----- |
+| retiisi  | 7     |
+| porkkana | 8     |
+| porkkana | 3     |
